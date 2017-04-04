@@ -276,6 +276,7 @@ class Map(GridLayout):
                 self.addItem(item, row - skipped, col)
         L.setLevel(DEBUG)
         L.debug('\u001b[32mFile map parsed\u001b[0m')
+        mapFile.close()
 
     def pause(self):
         super().pause()
